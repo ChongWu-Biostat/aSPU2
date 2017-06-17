@@ -8,6 +8,7 @@ Maintainer: Chong Wu <wuxx0845@umn.edu>
 Description: A new and fast version for aSPU related tests. We do some limited comparison, the new version is around ten times faster than the previous version.
 License: GPL (>= 2)
 Imports: Rcpp (>= 0.12.9)
-LinkingTo: Rcpp, RcppArmadillo, BH, bigmemory
+LinkingTo: Rcpp, RcppArmadillo, BH, bigmemory, MASS, mvtnorm
+Depends: bigmemory, MASS, mvtnorm
 RoxygenNote: 5.0.1
 NeedsCompilation: yes

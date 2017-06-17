@@ -1,5 +1,8 @@
 useDynLib(aSPU2)
 importFrom(Rcpp, evalCpp)
+importFrom("MASS", "ginv")
+importFrom("mvtnorm","pmvnorm")
+importFrom("bigmemory","big.matrix")
 importFrom("stats", "as.dist", "cophenetic", "fitted.values", "glm", "rgamma", "rmultinom", "var", "rnbinom", "rnorm", "pnorm", "rbinom", "cor", "pchisq", "qnorm")
 export(aSPU)
 export(aSPUO)

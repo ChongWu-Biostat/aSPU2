@@ -17,6 +17,33 @@
 #' @return P-values for aSPU test.
 #'
 #' @author Chong Wu, Zhiyuan Xu, and Wei Pan
+#'
+#' @examples
+#'
+#' library(aSPU2)
+#' n = 10
+#' times <- 1:n
+#' rho <- 0.3
+#' sigma <- 2
+#'
+#' ###############
+#' H <- abs(outer(times, times, "-"))
+#' V <- sigma * rho^H
+#' p <- nrow(V)
+#' V[cbind(1:p, 1:p)] <- V[cbind(1:p, 1:p)] * sigma
+#'
+#' eV<-eigen(V)
+#' CovSsqrt<- t(eV$vectors %*% (t(eV$vectors) * sqrt(eV$values)))
+#'
+#' U = CovSsqrt %*% rnorm(n)
+#'
+#' #Multiple weights we want to use
+#' weight = cbind(rep(1,100),runif(100))
+#' aSPU(U,V,weight[,1],pow=c(1:6,Inf),n.perm = 1000)
+#'
+#' data(exdat)
+#' out <- aSPUd(exdat$Y, exdat$X, cov = NULL, model = "binomial")
+#' out
 
 aSPU <- function(U,V,weight, pow = c(1:8,Inf),n.perm = 1000) {
     
