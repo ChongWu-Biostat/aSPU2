@@ -1,14 +1,14 @@
 Package: aSPU2
 Type: Package
 Title: New Version of Adaptive Sum of Powered Score (aSPU) Test
-Version: 1.0
-Date: 2017-06-17
-Author: Chong Wu, Zhiyuan Xu, Wei Pan
+Version: 1.1
+Date: 2017-08-02
+Author: Chong Wu
 Maintainer: Chong Wu <wuxx0845@umn.edu>
 Description: A new and fast version for aSPU related tests. We do some limited comparison, the new version is around ten times faster than the previous version.
 License: GPL (>= 2)
 Imports: Rcpp (>= 0.12.9)
-LinkingTo: Rcpp, RcppArmadillo, BH, bigmemory, MASS, mvtnorm
+LinkingTo: Rcpp, RcppArmadillo, BH, bigmemory, mvtnorm
 Depends: bigmemory, MASS, mvtnorm
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
 NeedsCompilation: yes

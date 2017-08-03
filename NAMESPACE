@@ -7,3 +7,5 @@ importFrom("stats", "as.dist", "cophenetic", "fitted.values", "glm", "rgamma", "
 export(aSPU)
 export(aSPUO)
 export(daSPU)
+export(aSPUPath)
+export(glmm_score)

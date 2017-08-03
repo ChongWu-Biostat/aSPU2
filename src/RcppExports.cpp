@@ -8,7 +8,7 @@ using namespace Rcpp;
 
 // calcT0Wsim1
 Rcpp::List calcT0Wsim1(arma::mat& CvSqrt, arma::mat& weight, arma::vec powV, int nperm);
-RcppExport SEXP aSPU2_calcT0Wsim1(SEXP CvSqrtSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_calcT0Wsim1(SEXP CvSqrtSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -22,7 +22,7 @@ END_RCPP
 }
 // avg_rank
 arma::vec avg_rank(arma::vec x);
-RcppExport SEXP aSPU2_avg_rank(SEXP xSEXP) {
+RcppExport SEXP _aSPU2_avg_rank(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -33,7 +33,7 @@ END_RCPP
 }
 // calcT0Wsim3
 Rcpp::List calcT0Wsim3(arma::mat& CvSqrt, arma::mat& weight, arma::vec powV, arma::vec Tsabs, SEXP pBigMat, int nperm);
-RcppExport SEXP aSPU2_calcT0Wsim3(SEXP CvSqrtSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP TsabsSEXP, SEXP pBigMatSEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_calcT0Wsim3(SEXP CvSqrtSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP TsabsSEXP, SEXP pBigMatSEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -49,7 +49,7 @@ END_RCPP
 }
 // calcT0Wsim4
 Rcpp::List calcT0Wsim4(arma::mat& CvSqrt, arma::mat& weight, arma::vec Tsabs, arma::vec powV, SEXP pBigMat, SEXP pBigMat3, int nperm);
-RcppExport SEXP aSPU2_calcT0Wsim4(SEXP CvSqrtSEXP, SEXP weightSEXP, SEXP TsabsSEXP, SEXP powVSEXP, SEXP pBigMatSEXP, SEXP pBigMat3SEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_calcT0Wsim4(SEXP CvSqrtSEXP, SEXP weightSEXP, SEXP TsabsSEXP, SEXP powVSEXP, SEXP pBigMatSEXP, SEXP pBigMat3SEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -66,7 +66,7 @@ END_RCPP
 }
 // calcT0WsimV3
 Rcpp::List calcT0WsimV3(arma::mat& CvSqrt, arma::mat& weight, arma::vec powV, SEXP pBigMat, SEXP pBigMat3, int nperm);
-RcppExport SEXP aSPU2_calcT0WsimV3(SEXP CvSqrtSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP pBigMatSEXP, SEXP pBigMat3SEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_calcT0WsimV3(SEXP CvSqrtSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP pBigMatSEXP, SEXP pBigMat3SEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -82,7 +82,7 @@ END_RCPP
 }
 // calc_test_ch
 void calc_test_ch(arma::mat& cov, arma::mat& weight, arma::vec powV, SEXP pBigMat, SEXP pBigMat2, int nperm);
-RcppExport SEXP aSPU2_calc_test_ch(SEXP covSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP pBigMatSEXP, SEXP pBigMat2SEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_calc_test_ch(SEXP covSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP pBigMatSEXP, SEXP pBigMat2SEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< arma::mat& >::type cov(covSEXP);
@@ -97,7 +97,7 @@ END_RCPP
 }
 // calc_test_ch_V3
 void calc_test_ch_V3(arma::mat& cov, arma::vec& mean, arma::mat& weight, arma::vec powV, SEXP pBigMat, SEXP pBigMat2, int nperm);
-RcppExport SEXP aSPU2_calc_test_ch_V3(SEXP covSEXP, SEXP meanSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP pBigMatSEXP, SEXP pBigMat2SEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_calc_test_ch_V3(SEXP covSEXP, SEXP meanSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP pBigMatSEXP, SEXP pBigMat2SEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< arma::mat& >::type cov(covSEXP);
@@ -113,7 +113,7 @@ END_RCPP
 }
 // calc_test_pan
 void calc_test_pan(arma::mat& cov, arma::mat& weight, arma::vec powV, SEXP pBigMat, SEXP pBigMat2, int nperm);
-RcppExport SEXP aSPU2_calc_test_pan(SEXP covSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP pBigMatSEXP, SEXP pBigMat2SEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_calc_test_pan(SEXP covSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP pBigMatSEXP, SEXP pBigMat2SEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< arma::mat& >::type cov(covSEXP);
@@ -128,7 +128,7 @@ END_RCPP
 }
 // calc_test_ts
 arma::mat calc_test_ts(arma::mat& cov, arma::mat& weight, arma::vec powV, arma::vec Ts);
-RcppExport SEXP aSPU2_calc_test_ts(SEXP covSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP TsSEXP) {
+RcppExport SEXP _aSPU2_calc_test_ts(SEXP covSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP TsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -142,7 +142,7 @@ END_RCPP
 }
 // calc_test_ts_V3
 arma::mat calc_test_ts_V3(arma::mat& cov, arma::vec& mean, arma::mat& weight, arma::vec powV, arma::vec Ts);
-RcppExport SEXP aSPU2_calc_test_ts_V3(SEXP covSEXP, SEXP meanSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP TsSEXP) {
+RcppExport SEXP _aSPU2_calc_test_ts_V3(SEXP covSEXP, SEXP meanSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP TsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -157,7 +157,7 @@ END_RCPP
 }
 // calc_p_ch
 Rcpp::List calc_p_ch(arma::vec powV, arma::vec Tsabs, SEXP pBigMat2, int nperm);
-RcppExport SEXP aSPU2_calc_p_ch(SEXP powVSEXP, SEXP TsabsSEXP, SEXP pBigMat2SEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_calc_p_ch(SEXP powVSEXP, SEXP TsabsSEXP, SEXP pBigMat2SEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -171,7 +171,7 @@ END_RCPP
 }
 // calc_p_ch_pan
 Rcpp::List calc_p_ch_pan(arma::vec powV, arma::vec Tsabs, SEXP pBigMat, int nperm);
-RcppExport SEXP aSPU2_calc_p_ch_pan(SEXP powVSEXP, SEXP TsabsSEXP, SEXP pBigMatSEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_calc_p_ch_pan(SEXP powVSEXP, SEXP TsabsSEXP, SEXP pBigMatSEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -185,7 +185,7 @@ END_RCPP
 }
 // calc_p_pan
 Rcpp::List calc_p_pan(arma::vec Tsabs, SEXP pBigMat, SEXP pBigMat2, SEXP pBigMat3, int nTs, int nweight, int nperm);
-RcppExport SEXP aSPU2_calc_p_pan(SEXP TsabsSEXP, SEXP pBigMatSEXP, SEXP pBigMat2SEXP, SEXP pBigMat3SEXP, SEXP nTsSEXP, SEXP nweightSEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_calc_p_pan(SEXP TsabsSEXP, SEXP pBigMatSEXP, SEXP pBigMat2SEXP, SEXP pBigMat3SEXP, SEXP nTsSEXP, SEXP nweightSEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -202,7 +202,7 @@ END_RCPP
 }
 // calc_aSPU
 arma::vec calc_aSPU(arma::mat p_cov, SEXP pBigMat2, int nperm);
-RcppExport SEXP aSPU2_calc_aSPU(SEXP p_covSEXP, SEXP pBigMat2SEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_calc_aSPU(SEXP p_covSEXP, SEXP pBigMat2SEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -215,7 +215,7 @@ END_RCPP
 }
 // daSPU_calcT0Wsim4
 Rcpp::List daSPU_calcT0Wsim4(arma::mat& CvSqrt, arma::mat& weight, arma::vec powV, arma::vec Tsabs, SEXP pBigMat, SEXP pBigMat2, SEXP pBigMat3, int nperm);
-RcppExport SEXP aSPU2_daSPU_calcT0Wsim4(SEXP CvSqrtSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP TsabsSEXP, SEXP pBigMatSEXP, SEXP pBigMat2SEXP, SEXP pBigMat3SEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_daSPU_calcT0Wsim4(SEXP CvSqrtSEXP, SEXP weightSEXP, SEXP powVSEXP, SEXP TsabsSEXP, SEXP pBigMatSEXP, SEXP pBigMat2SEXP, SEXP pBigMat3SEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -233,7 +233,7 @@ END_RCPP
 }
 // daSPU_calc_aSPU
 arma::vec daSPU_calc_aSPU(arma::mat p_cov, SEXP pBigMat2, int nperm);
-RcppExport SEXP aSPU2_daSPU_calc_aSPU(SEXP p_covSEXP, SEXP pBigMat2SEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_daSPU_calc_aSPU(SEXP p_covSEXP, SEXP pBigMat2SEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -246,7 +246,7 @@ END_RCPP
 }
 // calcT0Wsim2
 Rcpp::List calcT0Wsim2(arma::mat& CvSqrt, arma::mat& weight, arma::vec pow1, arma::vec pow2, int nperm);
-RcppExport SEXP aSPU2_calcT0Wsim2(SEXP CvSqrtSEXP, SEXP weightSEXP, SEXP pow1SEXP, SEXP pow2SEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_calcT0Wsim2(SEXP CvSqrtSEXP, SEXP weightSEXP, SEXP pow1SEXP, SEXP pow2SEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -261,7 +261,7 @@ END_RCPP
 }
 // daSPU_calcT0
 arma::vec daSPU_calcT0(arma::mat& CvSqrt, arma::mat& weight, arma::vec pow1, arma::vec pow2, arma::vec Tsabs, SEXP pBigMat, int nperm);
-RcppExport SEXP aSPU2_daSPU_calcT0(SEXP CvSqrtSEXP, SEXP weightSEXP, SEXP pow1SEXP, SEXP pow2SEXP, SEXP TsabsSEXP, SEXP pBigMatSEXP, SEXP npermSEXP) {
+RcppExport SEXP _aSPU2_daSPU_calcT0(SEXP CvSqrtSEXP, SEXP weightSEXP, SEXP pow1SEXP, SEXP pow2SEXP, SEXP TsabsSEXP, SEXP pBigMatSEXP, SEXP npermSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -275,4 +275,76 @@ BEGIN_RCPP
     rcpp_result_gen = Rcpp::wrap(daSPU_calcT0(CvSqrt, weight, pow1, pow2, Tsabs, pBigMat, nperm));
     return rcpp_result_gen;
 END_RCPP
+}
+// set_seed
+void set_seed(unsigned int seed);
+RcppExport SEXP _aSPU2_set_seed(SEXP seedSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< unsigned int >::type seed(seedSEXP);
+    set_seed(seed);
+    return R_NilValue;
+END_RCPP
+}
+// avg_rank2
+Rcpp::NumericVector avg_rank2(Rcpp::NumericVector x);
+RcppExport SEXP _aSPU2_avg_rank2(SEXP xSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::NumericVector >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(avg_rank2(x));
+    return rcpp_result_gen;
+END_RCPP
+}
+// aSPUsPathEngine2
+Rcpp::List aSPUsPathEngine2(Rcpp::List CH, Rcpp::List CHcovSq, arma::vec pow1, arma::vec pow2, int nGenes, int n_perm, int k, arma::vec nSNPs0, arma::vec nChrom0, arma::vec Ts2, int s);
+RcppExport SEXP _aSPU2_aSPUsPathEngine2(SEXP CHSEXP, SEXP CHcovSqSEXP, SEXP pow1SEXP, SEXP pow2SEXP, SEXP nGenesSEXP, SEXP n_permSEXP, SEXP kSEXP, SEXP nSNPs0SEXP, SEXP nChrom0SEXP, SEXP Ts2SEXP, SEXP sSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::List >::type CH(CHSEXP);
+    Rcpp::traits::input_parameter< Rcpp::List >::type CHcovSq(CHcovSqSEXP);
+    Rcpp::traits::input_parameter< arma::vec >::type pow1(pow1SEXP);
+    Rcpp::traits::input_parameter< arma::vec >::type pow2(pow2SEXP);
+    Rcpp::traits::input_parameter< int >::type nGenes(nGenesSEXP);
+    Rcpp::traits::input_parameter< int >::type n_perm(n_permSEXP);
+    Rcpp::traits::input_parameter< int >::type k(kSEXP);
+    Rcpp::traits::input_parameter< arma::vec >::type nSNPs0(nSNPs0SEXP);
+    Rcpp::traits::input_parameter< arma::vec >::type nChrom0(nChrom0SEXP);
+    Rcpp::traits::input_parameter< arma::vec >::type Ts2(Ts2SEXP);
+    Rcpp::traits::input_parameter< int >::type s(sSEXP);
+    rcpp_result_gen = Rcpp::wrap(aSPUsPathEngine2(CH, CHcovSq, pow1, pow2, nGenes, n_perm, k, nSNPs0, nChrom0, Ts2, s));
+    return rcpp_result_gen;
+END_RCPP
+}
+
+static const R_CallMethodDef CallEntries[] = {
+    {"_aSPU2_calcT0Wsim1", (DL_FUNC) &_aSPU2_calcT0Wsim1, 4},
+    {"_aSPU2_avg_rank", (DL_FUNC) &_aSPU2_avg_rank, 1},
+    {"_aSPU2_calcT0Wsim3", (DL_FUNC) &_aSPU2_calcT0Wsim3, 6},
+    {"_aSPU2_calcT0Wsim4", (DL_FUNC) &_aSPU2_calcT0Wsim4, 7},
+    {"_aSPU2_calcT0WsimV3", (DL_FUNC) &_aSPU2_calcT0WsimV3, 6},
+    {"_aSPU2_calc_test_ch", (DL_FUNC) &_aSPU2_calc_test_ch, 6},
+    {"_aSPU2_calc_test_ch_V3", (DL_FUNC) &_aSPU2_calc_test_ch_V3, 7},
+    {"_aSPU2_calc_test_pan", (DL_FUNC) &_aSPU2_calc_test_pan, 6},
+    {"_aSPU2_calc_test_ts", (DL_FUNC) &_aSPU2_calc_test_ts, 4},
+    {"_aSPU2_calc_test_ts_V3", (DL_FUNC) &_aSPU2_calc_test_ts_V3, 5},
+    {"_aSPU2_calc_p_ch", (DL_FUNC) &_aSPU2_calc_p_ch, 4},
+    {"_aSPU2_calc_p_ch_pan", (DL_FUNC) &_aSPU2_calc_p_ch_pan, 4},
+    {"_aSPU2_calc_p_pan", (DL_FUNC) &_aSPU2_calc_p_pan, 7},
+    {"_aSPU2_calc_aSPU", (DL_FUNC) &_aSPU2_calc_aSPU, 3},
+    {"_aSPU2_daSPU_calcT0Wsim4", (DL_FUNC) &_aSPU2_daSPU_calcT0Wsim4, 8},
+    {"_aSPU2_daSPU_calc_aSPU", (DL_FUNC) &_aSPU2_daSPU_calc_aSPU, 3},
+    {"_aSPU2_calcT0Wsim2", (DL_FUNC) &_aSPU2_calcT0Wsim2, 5},
+    {"_aSPU2_daSPU_calcT0", (DL_FUNC) &_aSPU2_daSPU_calcT0, 7},
+    {"_aSPU2_set_seed", (DL_FUNC) &_aSPU2_set_seed, 1},
+    {"_aSPU2_avg_rank2", (DL_FUNC) &_aSPU2_avg_rank2, 1},
+    {"_aSPU2_aSPUsPathEngine2", (DL_FUNC) &_aSPU2_aSPUsPathEngine2, 11},
+    {NULL, NULL, 0}
+};
+
+RcppExport void R_init_aSPU2(DllInfo *dll) {
+    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
 }
