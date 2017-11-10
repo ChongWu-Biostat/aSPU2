@@ -13,6 +13,7 @@ aSPU2 is a new version for aSPU and related tests. We rewrite the codes in a mor
 
 
 ## Installation
+
 To install the stable version from CRAN, run the following from an R console: 
 
 ```R
@@ -26,6 +27,8 @@ if (!require("devtools"))
   install.packages("devtools")
 devtools::install_github("ChongWu-Biostat/aSPU2")
 ```
+
+*Please make sure OpenMP is installed successfully. To speed up, the core function in aSPU is written in C++ and some software is needed. See [link](http://thecoatlessprofessor.com/programming/openmp-in-r-on-os-x/#after-3-4-0) for details. *
 
 
 
