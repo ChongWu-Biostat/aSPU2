@@ -28,6 +28,13 @@ if (!require("devtools"))
 devtools::install_github("ChongWu-Biostat/aSPU2")
 ```
 
+For some servers, we have to specify the package directory and install the package locally. "/gpfs/home/cwu3/R/x86_64-redhat-linux-gnu-library/3.5/" is the directory that stores the R package, and you need to replace it with your own directory.
+```R
+library(devtools)
+library(withr)
+withr::with_libpaths(new = "/gpfs/home/cwu3/R/x86_64-redhat-linux-gnu-library/3.5/", install_github("ChongWu-Biostat/aSPU2"))
+```
+
 *Please make sure OpenMP is installed successfully. To speed up, the core function in aSPU is written in C++ and some software is needed. See [link](http://thecoatlessprofessor.com/programming/openmp-in-r-on-os-x/#after-3-4-0) for details. *
 
 
