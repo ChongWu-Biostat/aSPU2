@@ -11,7 +11,6 @@ using namespace Rcpp;
 using namespace arma;
 
 #include <bigmemory/BigMatrix.h>
-// [[Rcpp::plugins(cpp11)]]
 
 
 // [[Rcpp::depends(RcppArmadillo)]]
