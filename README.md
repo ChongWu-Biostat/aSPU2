@@ -84,5 +84,5 @@ aSPU(U,V,weight[,1],pow=c(1:6,Inf),n.perm = 10000)
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2013-present, Chong Wu (wuxx0845@umn.edu) 
+Copyright (c) 2013-present, Chong Wu (cwu3@fsu.edu) 
 
